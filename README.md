@@ -1,10 +1,6 @@
 # Zapier MCP: GitHub & Gemini CLI — Practical Exercise Guide
 
 > A hands-on guide to connecting Gemini CLI with GitHub and Zapier MCP on Windows.
-
-![Zapier MCP + GitHub + Gemini CLI](./images/banner.png)
-<!-- Replace banner.png with your actual image. Recommended size: 1280×640px -->
-
 ---
 
 ## Prerequisites
@@ -42,7 +38,6 @@ Verify:
 gemini --version
 ```
 
-> **Free tier:** 60 requests/min and 1,000 requests/day — no credit card needed with Google OAuth.
 
 ### 3. Authenticate Gemini CLI
 
@@ -99,6 +94,7 @@ Restart Gemini CLI, then type:
 ```
 
 You should see GitHub tools listed such as `list_repos`, `create_issue`, `get_pull_request`, and more.
+<img width="917" height="943" alt="image" src="https://github.com/user-attachments/assets/939b81ce-1976-4ceb-b682-7e7d9d9514c5" />
 
 ---
 
@@ -110,6 +106,8 @@ You should see GitHub tools listed such as `list_repos`, `create_issue`, `get_pu
 2. Click **+ New MCP Server**
 3. Search for and select **Gemini CLI** as your AI agent
 4. Add the apps you want to connect (GitHub, Gmail, Slack, etc.)
+<img width="1906" height="746" alt="image" src="https://github.com/user-attachments/assets/2c8d2f5a-5b80-4d07-a9a0-846d3b542f63" />
+
 
 ### 8. Authenticate Zapier via OAuth
 
@@ -124,6 +122,7 @@ Then start Gemini CLI and run:
 ```
 /mcp auth zapier
 ```
+<img width="1457" height="671" alt="image" src="https://github.com/user-attachments/assets/3c9d51db-d159-43f2-b043-dd99e85c83bf" />
 
 A browser window will open — authorize Zapier with your account. The OAuth token is saved automatically.
 
@@ -135,6 +134,7 @@ Run `/mcp` inside Gemini CLI. You should see:
 🟢 github  — Connected
 🟢 zapier  — Connected
 ```
+<img width="728" height="478" alt="image" src="https://github.com/user-attachments/assets/064cee20-c0a8-415e-8edd-7528ba0e595e" />
 
 ---
 
@@ -145,31 +145,30 @@ Run `/mcp` inside Gemini CLI. You should see:
 ```
 List the open issues in my repo YOUR_USERNAME/YOUR_REPO
 ```
+<img width="902" height="188" alt="image" src="https://github.com/user-attachments/assets/7293f80f-eab8-4bf9-9d57-1e5a4b527cfd" />
 
 Then:
+
 
 ```
 Create a new issue titled "Test MCP integration" with body
 "Created via Gemini CLI + GitHub MCP" in my repo YOUR_USERNAME/YOUR_REPO
 ```
-
+<img width="900" height="336" alt="image" src="https://github.com/user-attachments/assets/23d12a0a-7611-4f75-bf9e-5850662865b9" />
 Verify the issue appears on GitHub.com.
+<img width="1897" height="743" alt="image" src="https://github.com/user-attachments/assets/623f068f-8bd1-4dad-91af-6c2d9b769a69" />
 
 ---
 
 ### Exercise B — Zapier: Trigger an action
 
-For Slack:
-
-```
-Send a Slack message to #general saying "Hello from Gemini CLI + Zapier MCP!"
-```
 
 For Gmail:
 
 ```
 Draft an email to test@example.com with subject "MCP Test" and body "Sent via Gemini CLI"
 ```
+<img width="692" height="630" alt="image" src="https://github.com/user-attachments/assets/14b11159-5ec2-4c9c-8fae-35071855755a" />
 
 ---
 
@@ -181,6 +180,7 @@ For each issue labeled "bug", send me a summary as a Slack message in #dev-alert
 ```
 
 Gemini will call the GitHub MCP to fetch issues, then call the Zapier MCP to send the Slack messages — no code required.
+<img width="692" height="630" alt="image" src="https://github.com/user-attachments/assets/f58808b7-4891-46de-bb68-d62cf2d4ac49" />
 
 ---
 
