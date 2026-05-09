@@ -180,7 +180,9 @@ For each issue labeled "bug", send me a summary as a Slack message in #dev-alert
 ```
 
 Gemini will call the GitHub MCP to fetch issues, then call the Zapier MCP to send the Slack messages — no code required.
-<img width="692" height="630" alt="image" src="https://github.com/user-attachments/assets/f58808b7-4891-46de-bb68-d62cf2d4ac49" />
+<img width="900" height="315" alt="image" src="https://github.com/user-attachments/assets/ec5d5641-e412-4c02-ab7a-b834fbdafa8e" />
+<img width="1348" height="362" alt="image" src="https://github.com/user-attachments/assets/58b65f41-be48-4299-a47d-578062672a9d" />
+
 
 ---
 
